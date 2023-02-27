@@ -1,0 +1,15 @@
+.profile__add {
+  margin-left: auto;
+  margin-top: 35px;
+  transition: .3s;
+}
+.profile__add:hover {
+  opacity: .6;
+}
+@media screen and (max-width: 690px) {
+  .profile__add {
+    margin: 0;
+    grid-column-start: span 3;
+    text-align: center;
+  }
+}
