@@ -3,5 +3,5 @@
 @media screen and (max-width: 690px) {
   .profile__info {
     grid-column: 2 / 3;
-  }
+}
 }

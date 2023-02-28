@@ -1,8 +1,0 @@
-.profile__avatar {
-}
-@media screen and (max-width: 690px) {
-  .profile__avatar {
-    grid-column-start: span 3;
-    text-align: center;
-  }
-}

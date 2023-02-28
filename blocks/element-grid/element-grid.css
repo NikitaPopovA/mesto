@@ -1,7 +1,7 @@
 .element-grid {
   display: grid;
-  grid-template-columns:  282px 282px 282px;
-  grid-template-rows: 361px 361px;
+  grid-template-columns:  repeat(3, 282px);
+  grid-template-rows: repeat(2, 361px);
   gap: 20px 17px;
 }
 @media screen and (max-width: 882px) {

@@ -14,68 +14,60 @@
   </header>
 
 <main class="main">
+
   <section class="profile">
-    <div class="profile__avatar">
-      <img class="profile__avatar-icon" src="./images/Profile-avatar.jpg" alt="Профиль аватар">
-    </div>
+    <img class="profile__avatar-icon" src="./images/Profile-avatar.jpg" alt="Профиль аватар">
     <div class="profile__info">
       <h1 class="profile__title">Жак-Ив Кусто</h1>
       <p class="profile__subtitle">Исследователь океана</p>
     </div>
-    <div class="profile__edit">
-      <button class="profile__edit-button" type="button">
-      </button>
-    </div>
-    <div class="profile__add">
-      <button class="profile__add-button" type="button">
-        <img src="./images/add-button-icon.svg" alt="Плюс">
-      </button>
-    </div>
+      <button class="profile__edit-button" type="button"></button>
+      <button class="profile__add-button" type="button"></button>
   </section>
 
   <section class="element-grid">
-    <div class="element-grid__card">
+    <article class="element-grid__card">
       <img class="element-grid__image" src="./images/element-grid-Karachayevsk.png" alt="Карачаевск">
       <div class="element-grid__description">
         <h2 class="element-grid__title">Карачаевск</h2>
         <button class="element-grid__like" type="button"></button>
       </div>
-    </div>
-    <div class="element-grid__card">
+    </article>
+    <article class="element-grid__card">
       <img class="element-grid__image" src="./images/element-grid-Elbrus.png" alt="Эльбрус">
       <div class="element-grid__description">
         <h2 class="element-grid__title">Эльбрус</h2>
         <button class="element-grid__like" type="button"></button>
       </div>
-    </div>
-    <div class="element-grid__card">
+    </article>
+    <article class="element-grid__card">
       <img class="element-grid__image" src="./images/element-grid-Dombay.png" alt="Домбай">
       <div class="element-grid__description">
         <h2 class="element-grid__title">Домбай</h2>
         <button class="element-grid__like" type="button"></button>
       </div>
-    </div>
-    <div class="element-grid__card">
+    </article>
+    <article class="element-grid__card">
       <img class="element-grid__image" src="./images/element-grid-Elbrus.png" alt="Эльбрус">
       <div class="element-grid__description">
         <h2 class="element-grid__title">Эльбрус</h2>
         <button class="element-grid__like" type="button"></button>
       </div>
-    </div>
-    <div class="element-grid__card">
+    </article>
+    <article class="element-grid__card">
       <img class="element-grid__image" src="./images/element-grid-Dombay.png" alt="Домбай">
       <div class="element-grid__description">
         <h2 class="element-grid__title">Домбай</h2>
         <button class="element-grid__like" type="button"></button>
       </div>
-    </div>
-    <div class="element-grid__card">
+    </article>
+    <article class="element-grid__card">
       <img class="element-grid__image" src="./images/element-grid-Karachayevsk.png" alt="Карачаевск">
       <div class="element-grid__description">
         <h2 class="element-grid__title">Карачаево-Ч...</h2>
         <button class="element-grid__like" type="button"></button>
       </div>
-    </div>
+    </article>
   </section>
 
   <footer class="footer">
@@ -83,12 +75,12 @@
   </footer>
 </main>
 
-<div class="popup popup_edit">
+<div class="popup">
   <div class="popup__box">
     <h2 class="popup__title">Редактировать профиль</h2>
    <form class="popup__form" name="popup__form" novalidate>
-    <input class="popup__input popup__input-name" name="input-name" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" required>
-    <input class="popup__input popup__input-job" name="input-job" placeholder="Что делаете" type="text" value="Исследователь океана" required>
+    <input class="popup__input popup__input_type_name" name="input-name" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" required>
+    <input class="popup__input popup__input_type_job" name="input-job" placeholder="Что делаете" type="text" value="Исследователь океана" required>
     <button class="popup__save-btn" type="submit">Сохранить</button>
    </form>
    <button class="popup__close-btn" type="button">

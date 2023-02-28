@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const popupContainer = document.querySelector('.popup');
   const closeBtn = popupContainer.querySelector('.popup__close-btn');
   const popupForm = document.querySelector('.popup__form');
-  const nameInputField = popupForm.querySelector('.popup__input-name');
-  const jobInputField = popupForm.querySelector('.popup__input-job');
+  const nameInputField = popupForm.querySelector('.popup__input_type_name');
+  const jobInputField = popupForm.querySelector('.popup__input_type_job');
   const profileTitle = personProfile.querySelector('.profile__title');
   const profileSubtitle = personProfile.querySelector('.profile__subtitle');
 

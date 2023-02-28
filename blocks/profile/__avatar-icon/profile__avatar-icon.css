@@ -3,3 +3,10 @@
   width: 120px;
   border-radius: 50%;
 }
+@media screen and (max-width: 690px) {
+  .profile__avatar-icon {
+    margin: 0 auto;
+    grid-column-start: span 3;
+    text-align: center;
+}
+}

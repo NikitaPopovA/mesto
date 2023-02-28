@@ -7,6 +7,9 @@
   line-height: 17px;
   border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 }
+.popup__input:first-child {
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 500px) {
   .popup__input {
     width: 238px;
