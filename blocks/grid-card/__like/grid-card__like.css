@@ -1,5 +1,4 @@
-
-.element-grid__like {
+.grid-card__like {
   background-image: url(../../../images/element-grid-like.svg);
   background-color: #fff;
   width: 22px;
@@ -9,6 +8,6 @@
   transition: .3s;
   cursor: pointer;
 }
-.element-grid__like:hover {
+.grid-card__like:hover {
   opacity: .6;
 }

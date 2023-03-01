@@ -1,13 +1,11 @@
-.element-grid {
+.elements {
   display: grid;
   grid-template-columns:  repeat(3, 282px);
   grid-template-rows: repeat(2, 361px);
   gap: 20px 17px;
 }
 @media screen and (max-width: 882px) {
-  .element-grid  {
+  .elements {
     grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   }
 }
-
-
