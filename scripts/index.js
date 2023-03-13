@@ -54,9 +54,9 @@ const cardsContainer = document.querySelector(".elements");
 // Форма добавления карточки
 const formAddCard = document.querySelector(".popup__form-card");
 // Поле формы ввода названия карточки
-const nameImage = formAddCard.querySelector(".popup__card_name");
+const nameImage = formAddCard.querySelector(".popup__input_card_name");
 // Поле формы ввода ссылки на изображение
-const linkImage = formAddCard.querySelector(".popup__card_link");
+const linkImage = formAddCard.querySelector(".popup__input_card_link");
 // Обращаюсь к popup секции magnification - увеличение картинки
 const magnificationPopup = document.querySelector(".popup_magnification");
 // Изображение которое будет
