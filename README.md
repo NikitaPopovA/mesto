@@ -8,7 +8,7 @@
 
 <a href="https://nikitapopova.github.io/mesto/" target="_blank">Ссылка на проект</a>
 
-<a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=iJ0Sl0goebIQUHDu-0" target="_blank">Ссылка на макет в Figma, Спринт №4</a>
+<a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=iJ0Sl0goebIQUHDu-0" target="_blank">Ссылка на макет в Figma, Спринт №4</a> </br>
 <a href="https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=0%3A1&t=7zbjRTWSREchaRfl-0" target="_blank">Ссылка на макет в Figma, Спринт №5</a>
 <h2>Технологии которые применялись</h2>
 
