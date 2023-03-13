@@ -1,6 +1,7 @@
 .grid-card__like {
   background-image: url(../../../images/element-grid-like.svg);
   background-color: #fff;
+  overflow: hidden;
   width: 22px;
   height: 19px;
   border: 0;

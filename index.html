@@ -14,60 +14,27 @@
   </header>
 
 <main class="main">
-
   <section class="profile">
     <img class="profile__avatar-icon" src="./images/Profile-avatar.jpg" alt="Профиль аватар">
     <div class="profile__info">
       <h1 class="profile__title">Жак-Ив Кусто</h1>
-      <p class="profile__subtitle">Исследователь океана</p>
+      <p class="profile__subtitle">Путешественник</p>
     </div>
       <button class="profile__edit-button" type="button"></button>
       <button class="profile__add-button" type="button"></button>
   </section>
 
   <section class="elements">
-    <article class="grid-card">
-      <img class="grid-card__image" src="./images/card-grid-Karachayevsk.png" alt="Карачаевск">
-      <div class="grid-card__description">
-        <h2 class="grid-card__title">Карачаевск</h2>
-        <button class="grid-card__like" type="button"></button>
-      </div>
-    </article>
-    <article class="grid-card">
-      <img class="grid-card__image" src="./images/card-grid-Elbrus.png" alt="Эльбрус">
-      <div class="grid-card__description">
-        <h2 class="grid-card__title">Эльбрус</h2>
-        <button class="grid-card__like" type="button"></button>
-      </div>
-    </article>
-    <article class="grid-card">
-      <img class="grid-card__image" src="./images/card-grid-Dombay.png" alt="Домбай">
-      <div class="grid-card__description">
-        <h2 class="grid-card__title">Домбай</h2>
-        <button class="grid-card__like" type="button"></button>
-      </div>
-    </article>
-    <article class="grid-card">
-      <img class="grid-card__image" src="./images/card-grid-Elbrus.png" alt="Эльбрус">
-      <div class="grid-card__description">
-        <h2 class="grid-card__title">Эльбрус</h2>
-        <button class="grid-card__like" type="button"></button>
-      </div>
-    </article>
-    <article class="grid-card">
-      <img class="grid-card__image" src="./images/card-grid-Dombay.png" alt="Домбай">
-      <div class="grid-card__description">
-        <h2 class="grid-card__title">Домбай</h2>
-        <button class="grid-card__like" type="button"></button>
-      </div>
-    </article>
-    <article class="grid-card">
-      <img class="grid-card__image" src="./images/card-grid-Karachayevsk.png" alt="Карачаевск">
-      <div class="grid-card__description">
-        <h2 class="grid-card__title">Карачаево-Ч...</h2>
-        <button class="grid-card__like" type="button"></button>
-      </div>
-    </article>
+    <template id="card-template">
+      <article class="grid-card">
+        <button class="grid-card__btn-delete"></button>
+        <img class="grid-card__image" src="#" alt="">
+        <div class="grid-card__description">
+          <h2 class="grid-card__title"></h2>
+          <button class="grid-card__like" type="button"></button>
+        </div>
+      </article>
+    </template>
   </section>
 
   <footer class="footer">
@@ -75,19 +42,40 @@
   </footer>
 </main>
 
-<div class="popup">
+<section class="popup popup_edit-profile">
   <div class="popup__box">
     <h2 class="popup__title">Редактировать профиль</h2>
-   <form class="popup__form" name="popup__form" novalidate>
+   <form class="popup__form popup__form-profile" name="popup__form" novalidate>
     <input class="popup__input popup__input_type_name" name="input-name" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" required>
-    <input class="popup__input popup__input_type_job" name="input-job" placeholder="Что делаете" type="text" value="Исследователь океана" required>
+    <input class="popup__input popup__input_type_job" name="input-job" placeholder="Куда поедем?" type="text" value="Путешественник" required>
     <button class="popup__save-btn" type="submit">Сохранить</button>
    </form>
-   <button class="popup__close-btn" type="button">
-    <img class="popup__image" src="./images/popup-close-icon.svg" alt="крестик">
+   <button class="popup__close-btn popup__close-btn-edit" type="button">
    </button>
   </div>
-</div>
+</section>
+
+<section class="popup popup_add-card">
+  <div class="popup__box">
+    <h2 class="popup__title">Новое место</h2>
+   <form class="popup__form popup__form-card" name="popup__form" novalidate>
+    <input class="popup__input popup__card_name" name="card-name" placeholder="Название" type="text"required>
+    <input class="popup__input popup__card_link" name="card-link" placeholder="Ссылка на картинку" required>
+    <button class="popup__save-btn" type="submit">Cоздать</button>
+   </form>
+   <button class="popup__close-btn popup__close-btn-add" type="button">
+   </button>
+  </div>
+</section>
+
+<section class="popup popup_magnification" >
+  <div class="popup__magnification-box">
+    <img class="popup__magnification-imag" src="#" alt="">
+    <p class="popup__magnification-title"></p>
+    <button type="button" class="popup__close-btn popup__close-btn-magnification">
+    </button>
+  </div>
+</section>
 
 <script src="./scripts/index.js"></script>
 </body>
