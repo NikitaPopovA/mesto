@@ -111,18 +111,4 @@ addCardBtn.addEventListener("click", () => openPopup(addCardPopup));
 closeAddCardBtn.addEventListener("click", () => closePopup(addCardPopup));
 formAddCard.addEventListener("submit", handleFormSubmitCard);
 
-cardsContainer.addEventListener("click", (evt) => {
-  const target = evt.target;
-
-  if (target.classList.contains("grid-card__image")) {
-  const card = target.closest(".grid-card");
-  const title = card.querySelector(".grid-card__title").textContent;
-  const alt = target.getAttribute("alt");
-  magnificationImg.src = target.getAttribute("src");
-  magnificationImg.alt = alt;
-  magnificationTitle.textContent = title;
-  openPopup(magnificationPopup);
-  }
-});
-
 closeMagnificationBtn.addEventListener("click", () => closePopup(magnificationPopup));

@@ -12,7 +12,12 @@
   width: 150px;
   cursor: pointer;
   margin-left: auto;
+  transition: .3s;
 }
+.profile__add-button:hover {
+  opacity: .6;
+}
+
 @media screen and (max-width: 690px) {
   .profile__add-button {
     margin: 0 auto;
