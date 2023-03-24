@@ -47,16 +47,17 @@ function checkInputValidity(formElement, inputElement, inputErrorClass, errorCla
   }
 }
 
-// Функция сбрасывает состояние валидации формы затем удаляет сообщение об ошибках, переключает состояние кнопки submit.
-export function resetValidation(formElement, {inputSelector, inputErrorClass, errorClass, inactiveButtonClass}) {
-  Array.from(formElement.querySelectorAll(inputSelector)).forEach(inputElement => {
+// Функция "resetValidation" сбрасывает состояние валидации формы. Очищает сообщения об ошибках и удаляет классы ошибок.
+// а также переключает состояние кнопки в неактивное.
+export function resetValidation(formElement, inputSelector, inputErrorClass, errorClass) {
+  Array.from(formElement.querySelectorAll(inputSelector)).forEach((inputElement) => {
     hideInputError(formElement, inputElement, inputErrorClass, errorClass);
   });
 
-  Array.from(formElement.querySelectorAll(`.${errorClass}`)).forEach(errorElement => {
+  Array.from(formElement.querySelectorAll(`.${errorClass}`)).map((errorElement) => {
     errorElement.textContent = "";
     errorElement.classList.remove(errorClass);
-  });
+  }).join('');
 
   toggleButtonState(Array.from(formElement.querySelectorAll(inputSelector)), formElement.querySelector(".popup__save-btn"), inactiveButtonClass);
 }

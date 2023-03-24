@@ -41,6 +41,8 @@ const closeMagnificationBtn = magnificationPopup.querySelector(".popup__close-bt
 const submitButtonProfile = profilePopup.querySelector(saveButtonClass);
 // Ccылка на кнопку сохранинея формы добавления карточки.
 const submitButtonCard = formAddCard.querySelector(saveButtonClass);
+// id карточки
+const cardTemplate = document.querySelector("#card-template");
 
 
 /* --------------------- Функции --------------------------------------------------------*/
@@ -89,11 +91,11 @@ const submitFormProfile = (evt) => {
 }
 // Функция создает карточку card на основе шаблона. Функция кланирует этот шаблон и настраивает его содержимое.
 function createCard(card) {
-  const cardTemplate = document.querySelector("#card-template").content.cloneNode(true);
-  const cardImage = cardTemplate.querySelector(".grid-card__image");
-  const cardTitle = cardTemplate.querySelector(".grid-card__title");
-  const likeBtn = cardTemplate.querySelector(".grid-card__like");
-  const deleteBtn = cardTemplate.querySelector(".grid-card__btn-delete");
+  const cardElement = cardTemplate.content.cloneNode(true);
+  const cardImage = cardElement.querySelector(".grid-card__image");
+  const cardTitle = cardElement.querySelector(".grid-card__title");
+  const likeBtn = cardElement.querySelector(".grid-card__like");
+  const deleteBtn = cardElement.querySelector(".grid-card__btn-delete");
 
   cardImage.setAttribute("src", card.image);
   cardImage.setAttribute("alt", card.alt);
@@ -115,7 +117,7 @@ function createCard(card) {
     magnificationTitle.textContent = cardTitle;
     openPopup(magnificationPopup);
   });
-  return cardTemplate;
+  return cardElement;
 }
 // Функция для добавления карточки на страницу.
 const renderCard = (card, cardsContainer) => cardsContainer.prepend(createCard(card));
