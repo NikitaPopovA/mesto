@@ -1,6 +1,6 @@
 <h1>Проект: «Место»</h1>
 
-<p>Спринт №4, Спринт №5</p>
+<p>Спринт №4, Спринт №5, Спринт №6</p>
 
 <img src="https://github.com/NikitaPopovA/mesto/blob/main/images/main-avatar.png" alt="Место-аватар">
 
@@ -9,7 +9,8 @@
 <a href="https://nikitapopova.github.io/mesto/" target="_blank">Ссылка на проект</a>
 
 <a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=iJ0Sl0goebIQUHDu-0" target="_blank">Ссылка на макет в Figma, Спринт №4</a> </br>
-<a href="https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=0%3A1&t=7zbjRTWSREchaRfl-0" target="_blank">Ссылка на макет в Figma, Спринт №5</a>
+<a href="https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=0%3A1&t=7zbjRTWSREchaRfl-0" target="_blank">Ссылка на макет в Figma, Спринт №5</a> </br>
+<a href="https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0-1&t=oUg5C1Yq0GsYJfz5-0" target="_blank">Ссылка на макет в Figma, Спринт №6</a>
 <h2>Технологии которые применялись</h2>
 
 <p>HTML</p>
@@ -37,5 +38,8 @@
   <li>С помощью урны можно удалить карточку</li>
   <li>Открытие popup с картинкой - картинка увеличивается</li>
   <li>Плавное открытие и закрытие popup</li>
+  <li>Валидация формы «Редактировать профиль» и «Новое место»</li>
+  <li>Закрытие попапа нажатием на Esc</li>
+  <li>Закрытие попапа кликом на темный фон сайта</li>
 </ul>
 
