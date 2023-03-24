@@ -1,5 +1,5 @@
 // Массив объектов карточек
-const elementCardMass = [
+export const elementCardMass = [
   {
     title: "Moscow, Russia",
     image: "https://images.unsplash.com/photo-1580033813221-dbe4d224e1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80",
@@ -11,9 +11,9 @@ const elementCardMass = [
       alt: "Tokyo, Japan",
   },
   {
-    title: "Toronto, Canada",
-    image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
-      alt: "Toronto, Canada",
+    title: "Ghent, Belgium",
+    image: "https://images.unsplash.com/photo-1585927207003-d7230e0834a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1149&q=80",
+      alt: "Ghent, Belgium",
   },
   {
     title: "New York, USA",

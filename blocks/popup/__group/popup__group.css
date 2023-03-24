@@ -1,0 +1,7 @@
+.popup__group {
+  margin-bottom: 13px;
+  min-height: 44px;
+}
+.popup__group:last-of-type {
+  margin-bottom: 0;
+}

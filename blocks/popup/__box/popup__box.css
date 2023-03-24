@@ -1,8 +1,7 @@
 .popup__box {
   position: relative;
-  display: flex;
-  flex-direction: column;
   max-width: 430px;
+  min-height: 330px;
   background: #fff;
   border-radius: 10px;
 }
