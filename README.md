@@ -1,6 +1,6 @@
 <h1>Проект: «Место»</h1>
 
-<p>Спринт №4, Спринт №5, Спринт №6</p>
+<p>Спринт №4, Спринт №5, Спринт №6, Спринт №7</p>
 
 <img src="https://github.com/NikitaPopovA/mesto/blob/main/images/main-avatar.png" alt="Место-аватар">
 
