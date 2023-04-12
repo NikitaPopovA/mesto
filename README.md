@@ -10,7 +10,8 @@
 
 <a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=iJ0Sl0goebIQUHDu-0" target="_blank">Ссылка на макет в Figma, Спринт №4</a> </br>
 <a href="https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=0%3A1&t=7zbjRTWSREchaRfl-0" target="_blank">Ссылка на макет в Figma, Спринт №5</a> </br>
-<a href="https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0-1&t=oUg5C1Yq0GsYJfz5-0" target="_blank">Ссылка на макет в Figma, Спринт №6</a>
+<a href="https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0-1&t=oUg5C1Yq0GsYJfz5-0" target="_blank">Ссылка на макет в Figma, Спринт №6 и №7</a> </br>
+
 <h2>Технологии которые применялись</h2>
 
 <p>HTML</p>
@@ -41,5 +42,7 @@
   <li>Валидация формы «Редактировать профиль» и «Новое место»</li>
   <li>Закрытие попапа нажатием на Esc</li>
   <li>Закрытие попапа кликом на темный фон сайта</li>
+  <li>Создание классов Card и FormValidator</li>
+  <li>Работа с ООП</li>
 </ul>
 

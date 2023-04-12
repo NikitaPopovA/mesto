@@ -45,15 +45,15 @@
 
 <section class="popup popup_edit-profile">
   <div class="popup__box">
-   <form class="popup__form popup__form-profile" name="popup__form" novalidate>
+   <form id="form-edit-profile" class="popup__form popup__form-profile" name="form-edit-profile" novalidate>
     <h2 class="popup__title">Редактировать профиль</h2>
     <div class="popup__group">
-      <input id="username" class="popup__input popup__input_type_name" name="input-name" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" minlength="2" maxlength="40" required>
-      <span class="popup__error popup__error_visible" id="username-error"></span>
+      <input id="name" class="popup__input popup__input_type_name" name="name" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" minlength="2" maxlength="40" required>
+      <span id="name-error" class="popup__error popup__error_visible"></span>
     </div>
     <div class="popup__group">
-      <input id="occupation"  class="popup__input popup__input_type_job" name="input-job" placeholder="Куда поедем?" type="text" value="Путешественник" minlength="2" maxlength="200" required>
-      <span class="popup__error popup__error_visible" id="occupation-error"></span>
+      <input id="job" class="popup__input popup__input_type_job" name="job" placeholder="Куда поедем?" type="text" value="Путешественник" minlength="2" maxlength="200" required>
+      <span id="job-error" class="popup__error popup__error_visible"></span>
     </div>
     <button class="popup__save-btn popup__save-btn_disabled" type="submit">Сохранить</button></form>
    <button class="popup__close-btn popup__close-btn-edit" type="button">
@@ -63,19 +63,19 @@
 
 <section class="popup popup_add-card">
   <div class="popup__box">
-   <form class="popup__form popup__form-card" name="popup__form" novalidate>
+   <form id="form-add-card" class="popup__form popup__form-card" name="form-add-card" novalidate>
     <h2 class="popup__title">Новое место</h2>
     <div class="popup__group">
-      <input id="card-name" class="popup__input popup__input_card_name" name="card-name" placeholder="Название" type="text" minlength="2" maxlength="30" required>
-      <span class="popup__error popup__error_visible" id="card-name-error"></span>
+      <input id="input-name" class="popup__input popup__input_card_name" name="input-name" placeholder="Название" type="text" minlength="2" maxlength="30" required>
+      <span id="input-name-error" class="popup__error popup__error_visible"></span>
     </div>
     <div class="popup__group">
-      <input id="card-occupation" class="popup__input popup__input_card_link" name="card-link" placeholder="Ссылка на картинку" type="url" required>
-      <span class="popup__error popup__error_visible" id="card-occupation-error"></span>
+      <input id="input-image" class="popup__input popup__input_card_link" name="input-image" placeholder="Ссылка на картинку" type="url" required>
+      <span id="input-image-error" class="popup__error popup__error_visible"></span>
     </div>
     <button class="popup__save-btn popup__save-btn_disabled" type="submit">Cоздать</button>
    </form>
-   <button class="popup__close-btn popup__close-btn-add" type="button">
+   <button class="popup__close-btn" type="button">
    </button>
   </div>
 </section>
@@ -84,13 +84,15 @@
   <div class="popup__magnification-box">
     <img class="popup__magnification-imag" src="#" alt="">
     <p class="popup__magnification-title"></p>
-    <button type="button" class="popup__close-btn popup__close-btn-magnification">
+    <button type="button" class="popup__close-btn">
    </button>
   </div>
 </section>
 
-<script src="./scripts/validate.js" type="module"></script>
-<script src="./scripts/constants.js" type="module"></script>
-<script src="./scripts/index.js" type="module"></script>
+<script type="module" src="./scripts/constants.js"></script>
+<script type="module" src="./scripts/FormValidator.js"></script>
+<script type="module" src="./scripts/Card.js"></script>
+<script type="module" src="./scripts/index.js"></script>
+
 </body>
 </html>
