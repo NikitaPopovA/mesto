@@ -23,6 +23,12 @@ export class Card {
     trashButton.parentElement.remove()
   }
 
+  _handleCardClick() {
+    setPopupImage(this._element.querySelector('.grid-card__image'));
+    openPopup(imagePopup);
+    closePopupKey(imagePopup);
+  }
+
   // Метод "_setEventListeners" устанавливает слушатель событий на кнопку "лайк" и "удалить".
   _setEventListeners() {
     this._element.querySelector('.grid-card__like').addEventListener('click', (evt) => {
