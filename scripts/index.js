@@ -42,7 +42,7 @@ const formElements = {
 
 /* --------------------- Функции --------------------------------------------------------*/
 
-// объекты FormValidator для валидации формы профиля и формы добавления карточки на странице.
+// Объекты FormValidator для валидации формы профиля и формы добавления карточки на странице.
 const profileFormValidator = new FormValidator(formElements, profilePopup);
 profileFormValidator.enableValidation();
 const cardFormValidator = new FormValidator(formElements, addCardPopup);
@@ -58,8 +58,6 @@ function openPopup (popup) {
 function closePopup (popup) {
   popup.classList.remove('popup_opened');
   document.removeEventListener('keydown', closePopupKey);
-  profileFormValidator.resetErrors();
-  cardFormValidator.resetErrors();
 };
 
 // Функция обрабатывает событие клика на странице и закрывает открытый всплывающий блок.
@@ -102,7 +100,7 @@ function openMagnification(name, link) {
   openPopup(imagePopup);
   magnificationTitle.textContent = name;
   magnificationImg.src = link;
-  magnificationTitle.alt = name;
+  magnificationImg.alt = name;
 };
 
 // Функция создает новую карточку на странице.
@@ -113,18 +111,23 @@ function renderCard(name, link, handleCardClick) {
 // Cоздает карточки на странице для каждого элемента в массиве elementCardMass и вызывает функцию renderCard() для каждого элемента.
 elementCardMass.forEach(card => renderCard(card.name, card.link, openMagnification));
 
-/* --------------------- Обработчики событий  --------------------------------------------------------*/
-
-editProfileBtn.addEventListener('click', function() {
+function handleEditProfileBtnClick() {
   openPopup(profilePopup);
   userNameInput.value = userName.textContent;
   occupationInput.value = userOccupation.textContent;
-});
+  profileFormValidator.resetErrors();
+}
 
-addCardBtn.addEventListener('click', function() {
+function handleAddCardBtnClick() {
   openPopup(addCardPopup);
   cardForm.reset();
-});
+  cardFormValidator.resetErrors();
+}
+
+/* --------------------- Обработчики событий  --------------------------------------------------------*/
+
+editProfileBtn.addEventListener('click', handleEditProfileBtnClick);
+addCardBtn.addEventListener('click', handleAddCardBtnClick);
 
 popupCloseBtn.forEach((button) => {
   button.addEventListener('click', () => {
