@@ -1,53 +1,45 @@
-// Класс "Card" для создания карточек с изображением и текстовым описанием.
-export class Card {
-  constructor(data, cardSelector){
-    this._title = data.name;
-    this._image = data.link;
-    this._cardSelector = cardSelector;
-  }
+export default class Card {
+  constructor(data, templateSelector, handleCardClick) {
+    this._name = data.name;
+    this._link = data.link;
+    this._templateSelector = templateSelector;
+    this._handleCardClick = handleCardClick;
+  };
 
-  // Метод "_getTemplate" для получения шаблока карточки и его клонирование.
-  _getTemplate() {
+   // Метод _getTemplate возвращает клонированный шаблон карточки.
+  _getTemplate = () => {
     const cardElement = document
-    .querySelector(this._cardSelector)
+    .querySelector(this._templateSelector)
     .content
+    .querySelector('.grid-card')
     .cloneNode(true);
     return cardElement;
   }
 
-  // Метод "_handleLikeClick" и "_handleDeleteClick" используются для обработки по кнопкам "лайк" и "удалить" .
-  _handleLikeClick(likeButton) {
-    likeButton.classList.toggle('grid-card__like_active');
-  }
-  _handleDeleteClick(trashButton) {
-    trashButton.parentElement.remove()
-  }
+  // Метод generateCard создает и заполняет карточку с помощью полученных данных и шаблона.
+  generateCard = () => {
+    this._card = this._getTemplate();
+    this._image = this._card.querySelector('.grid-card__image');
+    this._title = this._card.querySelector('.grid-card__title');
+    this._like = this._card.querySelector('.grid-card__like');
+    this._trash = this._card.querySelector('.grid-card__btn-delete');
+    this._setEventListener();
+    this._title.textContent = this._name;
+    this._image.src = this._link;
+    this._image.alt = this._name;
+    return this._card;
+  };
 
-  _handleCardClick() {
-    setPopupImage(this._element.querySelector('.grid-card__image'));
-    openPopup(imagePopup);
-    closePopupKey(imagePopup);
-  }
-
-  // Метод "_setEventListeners" устанавливает слушатель событий на кнопку "лайк" и "удалить".
-  _setEventListeners() {
-    this._element.querySelector('.grid-card__like').addEventListener('click', (evt) => {
-      this._handleLikeClick(evt.target);
+   // Метод _setEventListener устанавливает обработчики событий для элементов карточки, включая лайк, удаление и клик на изображение.
+  _setEventListener = () => {
+    this._like.addEventListener('click', (event) => {
+      event.target.classList.toggle('grid-card__like_active')
     });
-    this._element.querySelector('.grid-card__btn-delete').addEventListener('click', (evt) => {
-      this._handleDeleteClick(evt.target);
+    this._trash.addEventListener('click', () => {
+      this._card.remove()
+    });
+    this._image.addEventListener('click', () => {
+      this._handleCardClick( this._name, this._link )
     });
   }
-
-  // Метод "render" создает дом элемент карточки, заполяет его данными из объекта "data" и устанавливает слушатель на кнопки.
-  render() {
-    this._element = this._getTemplate();
-    this._element.querySelector('.grid-card__image').src = this._image;
-    this._element.querySelector('.grid-card__image').alt = this._title;
-    this._element.querySelector('.grid-card__title').textContent = this._title;
-    this._setEventListeners();
-    return this._element;
-  }
-}
-
-
+};

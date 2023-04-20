@@ -1,4 +1,4 @@
-export default [
+export const elementCardMass = [
   {
     name: 'Moscow, Russia',
     link: 'https://images.unsplash.com/photo-1580033813221-dbe4d224e1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80'
@@ -24,3 +24,5 @@ export default [
     link: 'https://images.unsplash.com/photo-1475066392170-59d55d96fe51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
   }
 ];
+
+
