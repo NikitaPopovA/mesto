@@ -2,7 +2,7 @@
 
 <p>Спринт №4, Спринт №5, Спринт №6, Спринт №7</p>
 
-<img src="https://github.com/NikitaPopovA/mesto/blob/main/images/main-avatar.png" alt="Место-аватар">
+<img src="https://github.com/NikitaPopovA/mesto/blob/main/src/images/main-avatar.png" alt="Место-аватар">
 
 <p>Ссылки:</p>
 
@@ -44,15 +44,16 @@
   <li>Закрытие попапа кликом на темный фон сайта</li>
   <li>Создание классов Card и FormValidator</li>
   <li>Работа с ООП</li>
+</ul>
 
-  <p>Реализую классы</p>
-
-  <li>класс Section, который отвечает за отрисовку элементов на странице</li>
-  <li>класс Popup, который отвечает за открытие и закрытие попапа.</li>
-  <li>класс PopupWithImage, который наследует от Popup</li>
-  <li>класс PopupWithForm, который наследует от Popup</li>
+<p>Реализую классы</p>
+<ul>
+  <li>Класс Section, который отвечает за отрисовку элементов на странице</li>
+  <li>Класс Popup, который отвечает за открытие и закрытие попапа.</li>
+  <li>Класс PopupWithImage, который наследует от Popup</li>
+  <li>Класс PopupWithForm, который наследует от Popup</li>
   <li>Класс UserInfo отвечает за управление отображением информации о пользователе на странице</li>
-  <li>класс Card связываю c попапом.</li>
+  <li>Класс Card связываю c попапом.</li>
   <li>Настройка проекта Вебваком</li>
   <li>Запускаем проект командами в консоли       npm run build , потом  npm run dev</li>
 </ul>
