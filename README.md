@@ -54,7 +54,12 @@
   <li>Класс PopupWithForm, который наследует от Popup</li>
   <li>Класс UserInfo отвечает за управление отображением информации о пользователе на странице</li>
   <li>Класс Card связываю c попапом.</li>
-  <li>Настройка проекта Вебваком</li>
-  <li>Запускаем проект командами в консоли       npm run build , потом  npm run dev</li>
+  <li>Настройка проекта Вебпаком</li>
 </ul>
 
+<p>Устанавливаем проект</p>
+<ol>
+  <li>Открываем Git Bash</li>
+  <li>Клонируем репозиторий git clone git@github.com:NikitaPopovA/mesto.git</li>
+  <li>Запускаем проект --> npm install ---> npm run build ---> npm run dev</li>
+</ol>
