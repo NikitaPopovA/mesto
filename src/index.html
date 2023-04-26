@@ -5,20 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Место</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <!--<link rel="stylesheet" href="./pages/index.css"> -->
 </head>
 <body class="page">
 
   <header class="header">
-    <img src="./images/Mesto-logo.svg" alt="Место-логотип" class="header__logo">
+    <img src="<%=require('./images/Mesto-logo.svg')%>" alt="Место-логотип" class="header__logo">
   </header>
 
 <main class="main">
 
   <section class="profile">
-    <img class="profile__avatar-icon" src="./images/Profile-avatar.jpg" alt="Профиль аватар">
-      <div class="profile__info">
-        <h1 class="profile__title">Жак-Ив Кусто</h1>
+    <img class="profile__avatar-icon" src="<%=require('./images/Profile-avatar.jpg')%>" alt="Профиль аватар">
+    <div class="profile__info">
+      <h1 class="profile__title">Жак-Ив Кусто</h1>
         <p class="profile__subtitle">Путешественник</p>
       </div>
       <button class="profile__edit-button" type="button"></button>
@@ -26,7 +26,7 @@
   </section>
 
   <section class="elements">
-    <template id="card-template">
+    <template class="card-template">
       <article class="grid-card">
         <button class="grid-card__btn-delete"></button>
         <img class="grid-card__image" src="#" alt="">
@@ -48,12 +48,12 @@
    <form class="popup__form popup__form-profile" name="popup__form" novalidate>
     <h2 class="popup__title">Редактировать профиль</h2>
     <div class="popup__group">
-      <input id="name-input" class="popup__input popup__input_user_name" name="user-name" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" minlength="2" maxlength="40" required>
-      <span class="popup__error user-name-error"></span>
+      <input id="popup__profile-name" class="popup__input popup__profile-name" name="userName" placeholder="Ваше имя" type="text" value="Жак-Ив Кусто" minlength="2" maxlength="40" required>
+      <span class="popup__input-error popup__profile-name-error"></span>
     </div>
     <div class="popup__group">
-      <input id="job-input" class="popup__input popup__input_user_occupation" name="job" placeholder="Куда поедем?" type="text" value="Путешественник" minlength="2" maxlength="200" required>
-      <span class="popup__error job-error"></span>
+      <input id="popup__profile-job" class="popup__input popup__profile-job" name="userOccupation" placeholder="Куда поедем?" type="text" value="Путешественник" minlength="2" maxlength="200" required>
+      <span class="popup__input-error popup__profile-job-error"></span>
     </div>
     <button class="popup__save-btn popup__save-btn_disabled" type="submit">Сохранить</button></form>
    <button class="popup__close-btn" type="button">
@@ -66,12 +66,12 @@
    <form class="popup__form popup__form-card" name="popup__form" novalidate>
     <h2 class="popup__title">Новое место</h2>
     <div class="popup__group">
-      <input id="card-name" class="popup__input popup__input_image_name" name="card-name" placeholder="Название" type="text" minlength="2" maxlength="30" required>
-      <span class="popup__error card-name-error"></span>
+      <input id="popup__card-name" class="popup__input popup__card-name" name="name" placeholder="Название" type="text" minlength="2" maxlength="30" required>
+      <span class="popup__input-error popup__card-name-error"></span>
     </div>
     <div class="popup__group">
-      <input id="card-link" class="popup__input popup__input_image_link" name="card-link" placeholder="Ссылка на картинку" type="url" required>
-      <span class="popup__error card-link-error"></span>
+      <input id="popup__card-link" class="popup__input popup__card-link" name="link" placeholder="Ссылка на картинку" type="url" required>
+      <span class="popup__input-error popup__card-link-error"></span>
     </div>
     <button class="popup__save-btn popup__save-btn_disabled" type="submit">Cоздать</button>
    </form>
@@ -89,7 +89,7 @@
   </div>
 </section>
 
-<script type="module" src="./scripts/index.js"></script>
+<!--<script type="module" src="./pages/index.js"></script> -->
 
 </body>
 </html>

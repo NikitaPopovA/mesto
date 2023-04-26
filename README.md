@@ -10,7 +10,7 @@
 
 <a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=iJ0Sl0goebIQUHDu-0" target="_blank">Ссылка на макет в Figma, Спринт №4</a> </br>
 <a href="https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=0%3A1&t=7zbjRTWSREchaRfl-0" target="_blank">Ссылка на макет в Figma, Спринт №5</a> </br>
-<a href="https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0-1&t=oUg5C1Yq0GsYJfz5-0" target="_blank">Ссылка на макет в Figma, Спринт №6 и №7</a> </br>
+<a href="https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0-1&t=oUg5C1Yq0GsYJfz5-0" target="_blank">Ссылка на макет в Figma, Спринт №6 , №7 , №8</a> </br>
 
 <h2>Технологии которые применялись</h2>
 
@@ -44,5 +44,16 @@
   <li>Закрытие попапа кликом на темный фон сайта</li>
   <li>Создание классов Card и FormValidator</li>
   <li>Работа с ООП</li>
+
+  <p>Реализую классы</p>
+
+  <li>класс Section, который отвечает за отрисовку элементов на странице</li>
+  <li>класс Popup, который отвечает за открытие и закрытие попапа.</li>
+  <li>класс PopupWithImage, который наследует от Popup</li>
+  <li>класс PopupWithForm, который наследует от Popup</li>
+  <li>Класс UserInfo отвечает за управление отображением информации о пользователе на странице</li>
+  <li>класс Card связываю c попапом.</li>
+  <li>Настройка проекта Вебваком</li>
+  <li>Запускаем проект командами в консоли       npm run build , потом  npm run dev</li>
 </ul>
 

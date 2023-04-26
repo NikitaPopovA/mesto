@@ -1,4 +1,4 @@
-.popup__error {
+.popup__input-error {
   margin: 5px 0 0;
   display: block;
   color: #ff0000;
@@ -6,6 +6,6 @@
   font-weight: 400;
   line-height: 15px;
   box-sizing: border-box;
-  visibility: hidden;
+  /*visibility: hidden; */
   height: 30px;
 }
