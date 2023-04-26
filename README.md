@@ -1,6 +1,6 @@
 <h1>Проект: «Место»</h1>
 
-<p>Спринт №4, Спринт №5, Спринт №6, Спринт №7</p>
+<p>Спринт №4, Спринт №5, Спринт №6, Спринт №7, Спринт №8</p>
 
 <img src="https://github.com/NikitaPopovA/mesto/blob/main/src/images/main-avatar.png" alt="Место-аватар">
 
@@ -62,4 +62,5 @@
   <li>Открываем Git Bash</li>
   <li>Клонируем репозиторий git clone git@github.com:NikitaPopovA/mesto.git</li>
   <li>Запускаем проект --> npm install ---> npm run build ---> npm run dev</li>
+  <li>Останавливаем сервер CTRL + C</li>
 </ol>
