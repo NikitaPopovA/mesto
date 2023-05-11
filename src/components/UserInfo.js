@@ -1,8 +1,8 @@
 export class UserInfo {
-  constructor(userName, userOccupation, AvatarImage) {
+  constructor(userName, userOccupation, avatarImage) {
     this._userName = userName;
     this._userOccupation = userOccupation;
-    this.AvatarImage = AvatarImage;
+    this.avatarImage = avatarImage;
   }
 
   getUserInfo() {
@@ -17,6 +17,6 @@ export class UserInfo {
     this._userOccupation.textContent = data.userOccupation
   }
   setUserAvatar(data) {
-    this.AvatarImage.src = data.avatar
+    this.avatarImage.src = data.avatar
   }
 }

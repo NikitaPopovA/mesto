@@ -7,7 +7,7 @@ export const editProfileBtn = document.querySelector('.profile__edit-button');
 export const addCardBtn = document.querySelector('.profile__add-button');
 // Обращаюсь к аватару.
 export const selectAvatarBtn = document.querySelector('.profile__filter');
-export const AvatarImage = document.querySelector('.profile__avatar-image');
+export const avatarImage = document.querySelector('.profile__avatar-image');
 // Контейнер который будет добавлять карточки.
 export const cardsContainer = document.querySelector('.elements');
 export const imagePopup = document.querySelector('.popup_magnification');
