@@ -16,13 +16,18 @@
 <main class="main">
 
   <section class="profile">
-    <img class="profile__avatar-icon" src="<%=require('./images/Profile-avatar.jpg')%>" alt="Профиль аватар">
-    <div class="profile__info">
-      <h1 class="profile__title">Жак-Ив Кусто</h1>
-        <p class="profile__subtitle">Путешественник</p>
+    <div class="profile__avatar">
+      <img class="profile__avatar-image" src="#" alt="Профиль аватар">
+      <div class="profile__filter">
+        <img class="profile__avatar-icon" src="<%=require('./images/avatar_edit.png')%>" alt="иконка">
       </div>
-      <button class="profile__edit-button" type="button"></button>
-      <button class="profile__add-button" type="button"></button>
+    </div>
+    <div class="profile__info">
+      <h1 class="profile__title"></h1>
+      <p class="profile__subtitle"></p>
+    </div>
+    <button class="profile__edit-button" type="button"></button>
+    <button class="profile__add-button" type="button"></button>
   </section>
 
   <section class="elements">
@@ -32,7 +37,10 @@
         <img class="grid-card__image" src="#" alt="">
         <div class="grid-card__description">
           <h2 class="grid-card__title"></h2>
-          <button class="grid-card__like" type="button"></button>
+          <div class="grid-card__likes-info">
+            <button class="grid-card__like" type="button"></button>
+            <span class="grid-card__counter-likes"></span>
+          </div>
         </div>
       </article>
     </template>
@@ -55,7 +63,7 @@
       <input id="popup__profile-job" class="popup__input popup__profile-job" name="userOccupation" placeholder="Куда поедем?" type="text" value="Путешественник" minlength="2" maxlength="200" required>
       <span class="popup__input-error popup__profile-job-error"></span>
     </div>
-    <button class="popup__save-btn popup__save-btn_disabled" type="submit">Сохранить</button></form>
+    <button class="popup__save-btn" type="submit">Сохранить</button></form>
    <button class="popup__close-btn" type="button">
    </button>
   </div>
@@ -73,19 +81,39 @@
       <input id="popup__card-link" class="popup__input popup__card-link" name="link" placeholder="Ссылка на картинку" type="url" required>
       <span class="popup__input-error popup__card-link-error"></span>
     </div>
-    <button class="popup__save-btn popup__save-btn_disabled" type="submit">Cоздать</button>
+    <button class="popup__save-btn" type="submit">Cоздать</button>
    </form>
-   <button class="popup__close-btn" type="button">
-   </button>
+   <button class="popup__close-btn" type="button"></button>
   </div>
 </section>
 
-<section class="popup popup_magnification" >
+<section class="popup popup_delete-cards">
+  <div class="popup__box">
+    <form class="popup__form" name="deleteFormCards">
+      <h2 class="popup__title popup__title_fix">Вы уверены?</h2>
+      <button class="popup__save-btn" type="submit">Да</button>
+    </form>
+    <button class="popup__close-btn" type="button"></button>
+  </div>
+</section>
+
+<section class="popup popup_swap-avatar">
+  <div class="popup__box">
+    <form class="popup__form popup__avatar-form" name="swapFormAvatar" novalidate>
+      <h2 class="popup__title">Обновить аватар</h2>
+      <input id="popup__avatar-link" class="popup__input popup__avatar-link" type="url" name="swapLink" placeholder="Ссылка на аватар" required>
+      <span class="popup__input-error popup__avatar-link-error"></span>
+      <button class="popup__save-btn" type="submit">Сохранить</button>
+    </form>
+    <button class="popup__close-btn" type="button"></button>
+  </div>
+</section>
+
+<section class="popup popup_magnification">
   <div class="popup__magnification-box">
     <img class="popup__magnification-imag" src="#" alt="">
     <p class="popup__magnification-title"></p>
-    <button type="button" class="popup__close-btn">
-   </button>
+    <button type="button" class="popup__close-btn"></button>
   </div>
 </section>
 

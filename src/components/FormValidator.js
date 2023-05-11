@@ -1,3 +1,4 @@
+import { config } from '../utils/constants.js'
 class FormValidator {
   constructor(config, form) {
     this._formSelector = config.formSelector;
@@ -65,14 +66,13 @@ class FormValidator {
     this._buttonElement.setAttribute('disabled', '')
     this._buttonElement.classList.add(this._inactiveButtonClass)
   }
+
+  resetErrors() {
+    this._inputList.forEach((input) => {
+      this._errorElement = this._form.querySelector(`.${input.id}-error`)
+      this._setInputValid(input)
+    })
+  }
 }
 
-const config = {
-  formSelector: '.popup__form',
-  inactiveButtonClass: 'popup__save-btn_disabled',
-  inputErrorClass: 'popup__input_type_error',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__save-btn'
-}
-
-export { FormValidator, config }
+export { FormValidator }

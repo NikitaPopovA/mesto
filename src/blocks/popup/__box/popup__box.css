@@ -1,7 +1,6 @@
 .popup__box {
   position: relative;
   max-width: 430px;
-  min-height: 330px;
   background: #fff;
   border-radius: 10px;
 }

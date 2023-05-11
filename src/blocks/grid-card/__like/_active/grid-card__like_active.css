@@ -1,4 +1,3 @@
-.grid-card__like_active {
+.grid-card__like_active{
   background-image: url(../../../../images/grid-card-active.svg);
-  opacity: 1;
 }

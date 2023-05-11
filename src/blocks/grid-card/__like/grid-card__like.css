@@ -1,14 +1,13 @@
 .grid-card__like {
-  background-image: url(../../../images/element-grid-like.svg);
+  padding: 0;
+  margin: 0;
+  background-image: url(../../../images/like_disabled.svg);
   background-color: #fff;
-  overflow: hidden;
-  width: 22px;
+  min-width: 22px;
   height: 19px;
   border: 0;
-  padding: 0;
-  transition: .3s;
   cursor: pointer;
-}
-.grid-card__like:hover {
-  opacity: .6;
+  transition: .3s;
+  background-size: 100%;
+  background-position: center;
 }
